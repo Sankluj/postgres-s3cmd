@@ -6,5 +6,6 @@ RUN apt-get update \
       python \
       python-pip \
       cron \
-      s3cmd \
     && rm -rf /var/lib/apt/lists/*
+
+RUN pip install 's3cmd>=2.0.0'
